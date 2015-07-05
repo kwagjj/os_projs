@@ -53,11 +53,11 @@ int main(void){
 	if(pid<0){
 		printf("error\n");
 	}
-	else if(pid==0){
+	else if(pid==0){ //child process
 		execvp(args[0],args);
 		return 0;
 	}
-	else{
+	else{	// parent process
 		printf("runbkg: %d\n",runbkg);
 		printf("child pid:%d \n",pid);
 		int status;
