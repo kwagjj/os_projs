@@ -1,9 +1,9 @@
 #include <linux/kernel.h>
 #include <linux/sched.h>
 #include <linux/module.h>
-#include <string.h>
+#include <linux/string.h>
 
-stataic int depth=0;
+static int depth=0;
 
 void shiftstr(char namebuf[30]){
 	int j=0;
@@ -24,7 +24,7 @@ int print_children(struct task_struct *parent){
 		shiftstr(namebuf);
 		namebuf[0]='-';
 	}
-	pritnk("%20s%10li\n",namebuf,parent->state);
+	printk("%20s%10li\n",namebuf,parent->state);
 
 	// parent info print finished.
 	//
