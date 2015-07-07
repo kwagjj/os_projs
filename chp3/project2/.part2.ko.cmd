@@ -1,0 +1,1 @@
+cmd_/home/kwagjj/projects/kernelprog/chp3/project2/part2.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.13.0-55-generic/scripts/module-common.lds --build-id  -o /home/kwagjj/projects/kernelprog/chp3/project2/part2.ko /home/kwagjj/projects/kernelprog/chp3/project2/part2.o /home/kwagjj/projects/kernelprog/chp3/project2/part2.mod.o
